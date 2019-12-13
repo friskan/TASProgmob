@@ -66,7 +66,7 @@ public class CrudDosenActivity extends AppCompatActivity {
         editAlamat = (EditText)findViewById(R.id.editTextAlamat);
         editEmail = (EditText)findViewById(R.id.editTextEmail);
         editGelar = (EditText)findViewById(R.id.editTextGelar);
-        editFoto = (EditText)findViewById(R.id.editTextFoto);
+        //editFoto = (EditText)findViewById(R.id.editTextFoto);
         imgFoto = (ImageView)findViewById(R.id.imgFotoDosen);
         btnBrowse = (Button)findViewById(R.id.btnBrowseFotoDosen);
 
@@ -112,10 +112,6 @@ public class CrudDosenActivity extends AppCompatActivity {
                     editGelar.setError("Silahkan mengisi Gelar Dosen");
                 }
 
-                if(editFoto.getText().toString().matches("")){
-                    editFoto.setError("Silahkan masukkan foto");
-                    isValid = false;
-                }
 
                 if(!isUpdate){
                     if(isValid){

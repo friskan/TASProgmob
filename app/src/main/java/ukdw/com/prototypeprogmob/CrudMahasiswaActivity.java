@@ -57,7 +57,7 @@ public class CrudMahasiswaActivity extends AppCompatActivity {
         editNim = (EditText)findViewById(R.id.editTextNim);
         editAlamat = (EditText)findViewById(R.id.editTextAlamat);
         editEmail = (EditText)findViewById(R.id.editTextEmail);
-        editFoto = (EditText)findViewById(R.id.editTextFoto);
+        //editFoto = (EditText)findViewById(R.id.editTextFoto);
         imgFoto = (ImageView)findViewById(R.id.imgCrudFotoDosen);
         btnBrowse = (Button)findViewById(R.id.btnBrowseFotomMhs);
 
@@ -99,10 +99,6 @@ public class CrudMahasiswaActivity extends AppCompatActivity {
                     isValid = false;
                 }
 
-                if(editFoto.getText().toString().matches("")){
-                    editFoto.setError("Silahkan masukkan foto");
-                    isValid = false;
-                }
 
                 if(!isUpdate){
                     if(isValid){
