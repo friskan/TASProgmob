@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeAdminActivity">
+
+    <ImageButton
+        android:id="@+id/imgButtonDaftarMhs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="236dp"
+        android:src="@drawable/flower5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imgButtonDataDiri"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/flower1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Matkul"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnDaftarMatkul"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnDaftarMatkul"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDaftarMatkul" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data Diri"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDataDiri"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDataDiri"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDataDiri" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Dosen"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDaftarDosen"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDaftarDosen"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDaftarDosen" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Mahasiswa"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDaftarMhs"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDaftarMhs"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDaftarMhs" />
+
+    <ImageButton
+        android:id="@+id/imgBtnKelolaKrs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="236dp"
+        android:src="@drawable/flower4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imgButtonDaftarDosen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/flower2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDaftarMatkul"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/flower3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Kelola KRS"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnKelolaKrs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnKelolaKrs"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnKelolaKrs" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:text="OUT"
+        android:textColor="#D60707"
+        android:textColorLink="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

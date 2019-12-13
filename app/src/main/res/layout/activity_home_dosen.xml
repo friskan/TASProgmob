@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeDosenActivity">
+
+    <ImageButton
+        android:id="@+id/imgButtonDataDiriDosen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/flower2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Data Diri"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDataDiriDosen"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDataDiriDosen"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDataDiriDosen" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Daftar KRS"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDaftarKrs"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDaftarKrs"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDaftarKrs" />
+
+    <ImageButton
+        android:id="@+id/imgButtonDaftarKrs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/flower3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Lihat Kelas"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonLihatKelas"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonLihatKelas"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonLihatKelas" />
+
+    <ImageButton
+        android:id="@+id/imgButtonLihatKelas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/flower4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
