@@ -81,7 +81,6 @@ public interface GetDataService {
             @Field("nidn") String nidn,
             @Field("alamat") String alamat,
             @Field("email") String email,
-            @Field("gelar") String gelar,
             @Field("foto") String foto,
             @Field("nim_progmob") String nim_progmob
     );

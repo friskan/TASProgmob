@@ -59,7 +59,7 @@ public class CrudDosenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crud_dosen);
         this.setTitle("Welcome Admin");
-        
+
 
         editNama = (EditText)findViewById(R.id.editTextNama);
         editNidn = (EditText)findViewById(R.id.editTextNidn);
@@ -110,6 +110,11 @@ public class CrudDosenActivity extends AppCompatActivity {
 
                 if(editGelar.getText().toString().matches("")){
                     editGelar.setError("Silahkan mengisi Gelar Dosen");
+                }
+
+                if(editFoto.getText().toString().matches("")){
+                    editFoto.setError("Silahkan masukkan foto");
+                    isValid = false;
                 }
 
                 if(!isUpdate){

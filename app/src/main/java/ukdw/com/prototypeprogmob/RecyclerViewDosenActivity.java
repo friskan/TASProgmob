@@ -138,9 +138,9 @@ public class RecyclerViewDosenActivity extends AppCompatActivity {
 
 
 
-        /*addData();
+        //addData();
 
-        recyclerView = findViewById(R.id.recyclerView);
+        /*recyclerView = findViewById(R.id.recyclerView);
         dosenAdapter = new DosenAdapter(dosenArrayList);
 
         RecyclerView.LayoutManager layoutManager = new
